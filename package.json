@@ -1,5 +1,6 @@
 {
   "name": "myfirstreact",
+  "homepage": "https://anupam012.github.io/IBharat_project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^12.7.2",
     "aos": "^2.3.4",
     "bootstrap": "^4.6.0",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.1",
     "react-countup": "^4.4.0",
     "react-device-detect": "^1.15.0",
@@ -20,6 +22,8 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
